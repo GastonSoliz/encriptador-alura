@@ -4,34 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador de texto - Gaston Soliz</title>
   </head>
   <body>
     <script src="app.js"></script>
-    <div>
-      <div>
-        <img />
-        <textarea>Ingrese el texto aqui</textarea>
-        <p><img />Solo letras minúsculas y sin acentos</p>
-        <div>
-          <button>Encriptar</button>
-          <button>Desencriptar</button>
+    <div class="container">
+      <div class="text-container">
+        <div class="logo-container">
+          <img src="/images/Logo.svg" class="logo" />
+        </div>
+        <textarea
+          id="autoExpand"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <p>
+          <img src="/images/Vector.svg" />Solo letras minúsculas y sin acentos
+        </p>
+        <div class="button-container">
+          <button class="button-encrypt">Encriptar</button>
+          <button class="button-decrypt">Desencriptar</button>
         </div>
       </div>
-      <div>
-        <div>
-          <img />
-          <p>Ningún mensaje fue encontrado</p>
-          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      <div class="result-container">
+        <div class="initial-result">
+          <img src="/images/Muñeco.png" />
+          <p class="message-none">Ningún mensaje fue encontrado</p>
+          <p class="message-text">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
         </div>
-        <div>
+        <div class="final-result">
           <p></p>
           <button>Copiar</button>
         </div>
       </div>
     </div>
   </body>
-  <footer>
+  <!-- <footer>
     <img /><a href="https://portfolio-gastonsoliz.netlify.app/">Gaston Soliz</a>
-  </footer>
+  </footer> -->
 </html>
