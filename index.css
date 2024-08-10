@@ -130,6 +130,33 @@ body {
   cursor: pointer;
 }
 
+.footer-container {
+  background-color: #ffffff;
+  display: flex;
+  gap: 5px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.footer-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #0a3871;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .button-container {
     flex-direction: row;
