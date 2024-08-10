@@ -13,13 +13,13 @@
     <title>Encriptador de texto - Gaston Soliz</title>
   </head>
   <body>
-    <script src="app.js"></script>
     <div class="container">
       <div class="text-container">
         <div class="logo-container">
           <img src="/images/Logo.svg" class="logo" />
         </div>
         <textarea
+          class="input-text"
           id="autoExpand"
           placeholder="Ingrese el texto aqui"
         ></textarea>
@@ -27,8 +27,12 @@
           <img src="/images/Vector.svg" />Solo letras minúsculas y sin acentos
         </p>
         <div class="button-container">
-          <button class="button-encrypt">Encriptar</button>
-          <button class="button-decrypt">Desencriptar</button>
+          <button class="button-encrypt" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="button-decrypt" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
         </div>
       </div>
       <div class="result-container">
@@ -40,15 +44,12 @@
           </p>
         </div>
         <div class="final-result" id="autoExpandResult">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
-            delectus repudiandae repellendus expedita unde placeat? Totam, esse
-            nulla exercitationem, consequuntur, eaque obcaecati saepe veniam
-          </p>
-          <button>Copiar</button>
+          <p class="output-text"></p>
+          <button id="copyButton">Copiar</button>
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
   <!-- <footer>
     <img /><a href="https://portfolio-gastonsoliz.netlify.app/">Gaston Soliz</a>
