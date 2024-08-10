@@ -20,11 +20,9 @@ function encriptar(text) {
 
 function btnEncriptar() {
   document.querySelector(".initial-result").style.display = "none";
-  // console.log(inputText.value);
   const textEncrypted = encriptar(inputText.value);
   outputText.textContent = textEncrypted;
   document.querySelector(".final-result").style.display = "flex";
-  // console.log(textEncrypted);
 }
 
 function desencriptar(text) {
@@ -39,11 +37,9 @@ function desencriptar(text) {
 
 function btnDesencriptar() {
   document.querySelector(".initial-result").style.display = "none";
-  // console.log(inputText.value);
   const textEncrypted = desencriptar(inputText.value);
   outputText.textContent = textEncrypted;
   document.querySelector(".final-result").style.display = "flex";
-  // console.log(textEncrypted);
 }
 
 document.getElementById("copyButton").addEventListener("click", function () {
